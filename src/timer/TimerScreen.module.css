@@ -1,0 +1,26 @@
+.full-screen {
+  background-color: #051b53;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  display: flex;
+  font-size: 1rem;
+}
+
+.dot {
+  width: 0.667rem;
+  height: 0.667rem;
+  border-radius: 50%;
+  background-color: aqua;
+}
