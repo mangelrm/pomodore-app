@@ -2,4 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.screen {
+  background-color: #051b53;
+  width: 100vw;
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
 }
