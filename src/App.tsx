@@ -1,18 +1,11 @@
-import TimerScreen from './timer/TimerScreen';
+import Timer from './timer/Timer';
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ProjectsScreen from './projects/ProjectsScreen';
+import ProjectsScreen from './projects/Projects';
+import MobileApp from './mobileApp/MobileApp';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<ProjectsScreen />} />
-        <Route path='/timer' element={<TimerScreen />} />
-      </Routes>
-    </Router>
-  );
+  return <MobileApp />;
 }
 
 export default App;

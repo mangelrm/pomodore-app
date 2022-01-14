@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './TimerScreen.module.css';
+import styles from './Timer.module.css';
 
-function TimerScreen() {
+function Timer() {
   const Header = () => (
     <div className={styles.header}>
       <h1 className={styles.title}>Realizar diseño</h1>
@@ -29,13 +29,13 @@ function TimerScreen() {
   );
 
   return (
-    <div className='screen'>
+    <>
       <Header />
       <TaskControls />
       <Timer />
       <PomodoreControls />
-    </div>
+    </>
   );
 }
 
-export default TimerScreen;
+export default Timer;
