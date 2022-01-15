@@ -1,24 +1,26 @@
 import React from 'react';
+import classNames from 'classnames';
 import styles from './Projects.module.css';
 
-function Projects() {
-  const Task = () => (
-    <li className={styles['task-item']}>
-      <div className={styles['task-project']}>
-        <span className={styles.dot} />
-        Hola como vas
-      </div>
-      <span>Tareaza</span>
-    </li>
-  );
+const dummyProjects = [
+  { id: 1, color: 'red', name: 'First project' },
+  { id: 2, color: 'green', name: 'Another one' },
+  { id: 3, color: 'cian', name: 'One more' },
+];
 
+function Projects() {
   return (
-    <ul className={styles['tasks-list']}>
-      <Task />
-      <Task />
-      <Task />
-      <Task />
-      <Task />
+    <ul className={styles.projects}>
+      {dummyProjects.map((project) => (
+        <li className={styles.item}>
+          <span
+            className={classNames(styles.dot, {
+              [styles[project.color]]: true,
+            })}
+          />
+          {project.name}
+        </li>
+      ))}
     </ul>
   );
 }

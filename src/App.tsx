@@ -1,7 +1,7 @@
 import Timer from './timer/Timer';
 import './App.css';
 
-import ProjectsScreen from './projects/Projects';
+import Tasks from './tasks/Tasks';
 import MobileApp from './mobileApp/MobileApp';
 
 function App() {
